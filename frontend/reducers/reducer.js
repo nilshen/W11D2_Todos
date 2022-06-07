@@ -23,13 +23,14 @@ export const todosReducer = (state = initialState, action) => {
 
     switch (action.type) {
         case RECEIVE_TODOS:
-            console.log(allTodos)
-            const allTodos = action.todos.map((el, idx)=> ({
+            const allTodos = action.todos.map((el)=> ({
                 id:el.id, todo:el
             }))
             return allTodos
         case RECEIVE_TODO:
-            return state[action.todo.id] = action.todo 
+            console.log(action)
+            nextState[action.todo.id] = action.todo
+            return nextState
         default:
             return state;
     }
