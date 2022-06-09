@@ -9,7 +9,15 @@ export default class TodoListItem extends React.Component {
 
         return (
             <div>
-                <li>{this.props.todoItem.title}</li>
+                <ul>
+                <li>{this.props.todoItem.title}
+
+                    <br/>
+
+                    {this.props.todoItem.body}
+                </li>
+                <br />
+                    </ul>
             </div>
         )
     }
