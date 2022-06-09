@@ -7,15 +7,15 @@ const initialState = {
         title: 'walk to store',
         done: false,
         todo_id: 1
-      },
+    },
        // this is the step with id = 2
-      2: {
+    2: {
         id: 2,
         title: 'buy soap',
         done: false,
         todo_id: 1
-      }
-  };
+    }
+};
 
 
 export const stepsReducer = (state = initialState, action) => {
